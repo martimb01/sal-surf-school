@@ -1,14 +1,60 @@
 .navBar {
-    display: flex;
     background-color: black;
-    min-height: 10vw;
+    height: 110px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.optionsList {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    
+.hamburgerButton{
+    margin-left: auto;
+    margin-right: 1.3rem;
 }
+
+.navList {
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    background-color: green;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.navList hr {
+    color: white;
+    opacity: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.logo {
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+/*For screens bigger than mobile*/
+@media (min-width: 768px) {
+
+    .hamburgerButton {
+        display: none;
+    }
+
+    .navList hr {
+        display: none;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: row;
+        background-color: black; /* Janky ahhh solution, do better */
+        gap: 2.6rem;
+        margin-right: 1.5rem;
+
+    }
+
+}
+
+

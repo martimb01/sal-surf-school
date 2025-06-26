@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "./NavBar";
+import {VT323} from 'next/font/google'
+
+//VT323 Font properties
+const vt323 = VT323({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: "Sal Surf School",
@@ -15,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
+        <header className={vt323.className}>
           <NavBar />
         </header>
         {children}
