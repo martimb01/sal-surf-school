@@ -76,8 +76,7 @@
 
     }
     .mobileNavList{
-        opacity: 0;
-        max-height: 0;
+        display: none;
     }
   
 }
