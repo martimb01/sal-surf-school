@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "./NavBar";
 
 export const metadata: Metadata = {
   title: "Sal Surf School",
@@ -14,6 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <header>
+          <NavBar />
+        </header>
         {children}
       </body>
     </html>

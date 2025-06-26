@@ -1,0 +1,14 @@
+.navBar {
+    display: flex;
+    background-color: black;
+    min-height: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionsList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    
+}
