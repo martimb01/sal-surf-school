@@ -1,3 +1,7 @@
+/*Mobile properties*/
+.desktopNavList {
+    display: none;
+}
 .navBar {
     background-color: black;
     height: 110px;
@@ -18,10 +22,11 @@
     flex-direction: column;
     gap: 0.5rem;
     list-style: none;
-    background-color: green;
+    background-color: rgb(18, 115, 206);
     text-align: center;
     font-size: 2rem;
 }
+
 
 .navList hr {
     color: white;
@@ -46,15 +51,17 @@
         display: none;
     }
 
+    .desktopNavList {
+        display: block;
+    }
     .navList {
         display: flex;
         flex-direction: row;
         background-color: black; /* Janky ahhh solution, do better */
         gap: 2.6rem;
-        margin-right: 1.5rem;
+        margin-right: 3rem;
 
     }
-
 }
 
 

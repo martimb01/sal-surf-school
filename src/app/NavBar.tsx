@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar() {
-    const [isMobileMenu, setIsMobileMenu] = useState<Boolean>(false)
+    const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false)
 
     useEffect(() => {console.log(isMobileMenu)}, [isMobileMenu])
 
@@ -23,7 +23,9 @@ export default function NavBar() {
                 <div className={styles.hamburgerButton}>
                     <RxHamburgerMenu onClick={() => setIsMobileMenu(!isMobileMenu)} size={50} />
                 </div>
-                <NavList/>
+                <div className={styles.desktopNavList}>
+                    <NavList />
+                </div>
             </nav>
             {isMobileMenu && <NavList />}    
         </nav>
