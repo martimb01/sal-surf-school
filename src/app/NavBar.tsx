@@ -2,6 +2,7 @@
 
 import styles from './NavBar.module.css'
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image'
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -12,7 +13,7 @@ export default function NavBar() {
 
     return(
         <nav>
-            <nav className={styles.navBar}>
+            <div className={styles.navBar}>
                 <Image
                     className={styles.logo} 
                     src='/logo.png'
@@ -26,20 +27,22 @@ export default function NavBar() {
                 <div className={styles.desktopNavList}>
                     <NavList />
                 </div>
-            </nav>
-            {isMobileMenu && <NavList />}    
+            </div>
+            <div className={styles.mobileNavList}>
+                <NavList isOpen={isMobileMenu} />
+            </div>
         </nav>
     )
 }
 
-function NavList () {
+function NavList ({ isOpen = false }) {
     return (
-            <ul className={styles.navList}>
-                <li>Lessons</li>
+            <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
+                <Link href=''>Lessons</Link>
                 <hr />
-                <li>About us</li>
+                <Link href=''>About us</Link>
                 <hr />
-                <li>Contacts</li>
+                <Link href=''>Contacts</Link>
             </ul>
     )
 }

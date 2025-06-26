@@ -17,14 +17,25 @@
 
 .navList {
     display: flex;
-    padding-top: 2%;
-    padding-bottom: 2%;
     flex-direction: column;
     gap: 0.5rem;
     list-style: none;
     background-color: rgb(18, 115, 206);
     text-align: center;
     font-size: 2rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 1s, padding 0.4s cubic-bezier(0.4,0,0.2,1);    
+}
+
+.open {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-height: 500px; 
+    opacity: 1;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
 }
 
 
@@ -60,8 +71,15 @@
         background-color: black; /* Janky ahhh solution, do better */
         gap: 2.6rem;
         margin-right: 3rem;
+        max-height: none;
+        opacity: 1;
 
     }
+    .mobileNavList{
+        opacity: 0;
+        max-height: 0;
+    }
+  
 }
 
 
