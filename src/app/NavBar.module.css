@@ -4,7 +4,7 @@
 }
 .navBar {
     background-color: black;
-    height: 110px;
+    height:90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,10 +49,14 @@
 .logo {
     margin-left: 1rem;
     margin-right: auto;
+    scale: 80%;
 }
 
 /*For screens bigger than mobile*/
 @media (min-width: 768px) {
+    .navBar {
+        height: 110px;
+    }
 
     .hamburgerButton {
         display: none;
@@ -78,6 +82,10 @@
     .mobileNavList{
         display: none;
     }
+
+    .logo {
+    scale: 100%;
+}
   
 }
 

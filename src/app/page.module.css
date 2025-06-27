@@ -1,9 +1,8 @@
 .heroSection {
-    background-color: yellow;
+    background-color: rgb(99, 99, 95);
     height: calc(100vh - 110px);
 }
 
 .firstSection {
     background-color: red;
-    height: 4000px;
 }
