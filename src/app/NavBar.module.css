@@ -55,7 +55,7 @@
 /*For screens bigger than mobile*/
 @media (min-width: 768px) {
     .navBar {
-        height: 110px;
+        height: 100px;
     }
 
     .hamburgerButton {
