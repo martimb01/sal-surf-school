@@ -21,7 +21,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .heroTitle {
@@ -29,13 +29,19 @@
 
 .heroSubTitle {
     font-size: 110%;
+}
 
+.heroButton {
+    margin-top: 500px;
+    scale: 250%;
 }
 
 
 
 .firstSection {
+    display: flex;
     background-color: red;
+    justify-content: center;
 }
 
 
@@ -51,8 +57,11 @@
         font-size: 50px;
     }
 
-    .heroTitle {
+    .heroButton {
+        margin-top: 400px;
+        scale: 250%;
     }
+
 
     .heroSubTitle {
         font-size: 80%;

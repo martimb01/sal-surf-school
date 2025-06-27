@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Carousel from "../components/Carousel";
 import {VT323} from 'next/font/google'
+import Button from "@/components/ui/Button";
 
 //VT323 Font properties
 const vt323 = VT323({
@@ -17,12 +18,14 @@ export default function Home() {
           <div className={styles.heroStack}>
             <div className={styles.heroMainSection}>
               <h1 className={styles.heroTitle}>Sal Surfing School</h1>
-              <h2 className={styles.heroSubTitle}>Good vibes only</h2>
+              <h2 className={styles.heroSubTitle}>Good vibes only 🤙</h2>
+              <div className={styles.heroButton}><Button label={'Book lesson!'}/></div>
             </div>
             <Carousel />
           </div>
         </div>
-        <div className={styles.firstSection}></div>
+        <div className={styles.firstSection}>
+        </div>
       </main>
     </div>
   );
