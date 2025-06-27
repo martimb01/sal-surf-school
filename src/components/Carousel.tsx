@@ -9,7 +9,7 @@ export default function EmblaCarousel() {
 
   return (
     <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
+      <div className={`embla__container ${styles.slide}`}>
         <div className="embla__slide">
           <div className={styles.imageWrapper}>
             <Image
@@ -39,7 +39,7 @@ export default function EmblaCarousel() {
               style={{objectFit: 'cover'}} 
             />
           </div>
-        </div>        
+        </div>       
       </div>
     </div>
   );
