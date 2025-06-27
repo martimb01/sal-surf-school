@@ -13,9 +13,12 @@ export default function Home() {
   return (
     <div className={`${styles.page} ${vt323.className}`}>
       <main className={styles.main}>
-        <div className={styles.heroSection}>
+        <div className={styles.heroContainer}>
           <div className={styles.heroStack}>
-            <h1 className={styles.heroTitle}>Sal Surfing School</h1>
+            <div className={styles.heroMainSection}>
+              <h1 className={styles.heroTitle}>Sal's Surfing School</h1>
+              <h2 className={styles.heroSubTitle}>Good vibes only</h2>
+            </div>
             <Carousel />
           </div>
         </div>
