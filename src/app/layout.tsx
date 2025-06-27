@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import styles from './layout.module.css'
 import NavBar from "./NavBar";
 import {VT323} from 'next/font/google'
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className={vt323.className}>
+        <header className={`${vt323.className} ${styles.header}`}>
           <NavBar />
         </header>
         {children}

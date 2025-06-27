@@ -1,0 +1,26 @@
+.card {
+    display:flex;
+    align-items: flex-end;
+    
+}
+
+.icon{
+    height: 100%;
+    width: 100%;
+}
+
+.cardInfo {
+    margin-left: auto;
+    margin-right: 10vw;
+    padding-bottom: 40px;
+    width: 50vw;
+}
+
+.infoText {
+    display: inline-block;
+}
+.infoText hr {
+    color: white;
+    width:100%;
+    
+}

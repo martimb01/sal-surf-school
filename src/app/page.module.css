@@ -1,6 +1,7 @@
 .heroContainer {
     background-color: rgb(99, 99, 95);
     height: calc(100vh - 90px);
+    margin-top: 90px;
 }
 
 .heroStack {
@@ -29,16 +30,14 @@
 }
 
 .heroButton {
-    margin-top: 55vh;
+    margin-top: 50vh;
     scale: 250%;
 }
 
-
-
 .firstSection {
     display: flex;
-    background-color: red;
-    justify-content: center;
+    flex-direction: column;
+    background-color: white(255, 255, 255);
 }
 
 
@@ -48,6 +47,7 @@
     .heroContainer {
     background-color: rgb(99, 99, 95);
     height: calc(100vh - 110px);
+    margin-top: 110px;
     }
 
     .heroMainSection {
