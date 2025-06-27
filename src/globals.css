@@ -39,3 +39,19 @@ a {
     color-scheme: dark;
   }
 }
+
+/*Embla Carousel*/
+.embla {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}

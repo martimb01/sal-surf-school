@@ -1,0 +1,9 @@
+.heroSection {
+    background-color: yellow;
+    height: calc(100vh - 110px);
+}
+
+.firstSection {
+    background-color: red;
+    height: 4000px;
+}
