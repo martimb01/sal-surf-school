@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <div className={styles.heroStack}>
             <div className={styles.heroMainSection}>
-              <h1 className={styles.heroTitle}>Sal's Surfing School</h1>
+              <h1 className={styles.heroTitle}>Sal Surfing School</h1>
               <h2 className={styles.heroSubTitle}>Good vibes only</h2>
             </div>
             <Carousel />
