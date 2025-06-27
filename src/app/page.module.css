@@ -24,15 +24,12 @@
     font-size: 28px;
 }
 
-.heroTitle {
-}
-
 .heroSubTitle {
     font-size: 110%;
 }
 
 .heroButton {
-    margin-top: 500px;
+    margin-top: 55vh;
     scale: 250%;
 }
 
@@ -58,7 +55,7 @@
     }
 
     .heroButton {
-        margin-top: 400px;
+        margin-top: 45vh;
         scale: 250%;
     }
 
