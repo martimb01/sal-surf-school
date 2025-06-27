@@ -1,7 +1,7 @@
 
 import styles from './PresentationCard.module.css'
 export default function PresentationCard(
-    {icon}: {icon:any}
+    {icon}: {icon: React.ReactNode}
 ) {
     return(
         <div className={styles.card}>
@@ -12,7 +12,7 @@ export default function PresentationCard(
                 <h1 className={styles.infoTitle}>Transport</h1>
                 <h2 className={styles.infoText}>
                     <hr />
-                    Well grab u anywhere in Lisbon!
+                    Well grab u anywhere in Lisbon! Lets kno
                     
                 </h2>
             </div>
