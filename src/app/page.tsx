@@ -29,23 +29,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.firstSection}>          
-          <PresentationCard 
-            icon={<MdHealthAndSafety size={150}/>}
-            title={'Safety first'}
-            info={'Our instructors are profesionaly trained, making sure its a safe and fun environment for everyone!'}
-          />
-          <hr/>
-          <PresentationCard 
-            icon={<GiSurferVan size={150}/>}
-            title={'Transport'}
-            info={'Well grab u anywhere in Lisbon! Just let us know where we should pick you up!'}
-          />
-          <hr />
-          <PresentationCard 
-            icon={<GiWaveSurfer size={150}/>}
-            title={'Fun'}
-            info={'Above all, well make sure we make your lesson worthwhile! No stress, just fun!'}
-          />          
+          First Section!        
         </div>
       </main>
     </div>
