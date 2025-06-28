@@ -1,0 +1,32 @@
+/*Mobile*/
+.card {
+    display: flex;
+    font-size: 75px;
+    margin-bottom: 20px;
+    
+}
+
+.icon {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.info {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+.infoTitle {
+    font-size: 80%;
+}
+
+.infoTitle hr {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.infoText {
+    font-size: 30%;
+}
