@@ -16,7 +16,8 @@ export default function EmblaCarousel() {
               src='/surf/surf1.jpg'
               alt='slide 1'
               fill
-              style={{objectFit: 'cover'}} 
+              style={{objectFit: 'cover'}}
+              priority
             />
           </div>
         </div>
