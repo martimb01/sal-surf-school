@@ -10,6 +10,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .heroMainSection {
@@ -22,6 +23,9 @@
     transform: translateX(-50%);
     text-align: center;
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
 }
 
 .heroSubTitle {
@@ -29,8 +33,10 @@
 }
 
 .heroButton {
-    margin-top: 50vh;
-    scale: 250%;
+    position: absolute;
+    top: 85%;
+    align-self: center;
+    scale: 250%;    
 }
 
 .firstSection {
@@ -53,11 +59,9 @@
         font-size: 50px;
     }
 
-    .heroButton {
-        margin-top: 45vh;
-        scale: 250%;
+    .heroButton {  
+        scale: 250%; 
     }
-
 
     .heroSubTitle {
         font-size: 80%;

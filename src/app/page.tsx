@@ -23,9 +23,9 @@ export default function Home() {
             <div className={styles.heroMainSection}>
               <h1 className={styles.heroTitle}>Sal Surfing School</h1>
               <h2 className={styles.heroSubTitle}>Good vibes only 🤙</h2>
-              <div className={styles.heroButton}><Button label={'Book lesson!'}/></div>
             </div>
             <Carousel />
+            <div className={styles.heroButton}><Button label={'Book lesson!'}/></div>
           </div>
         </div>
         <div className={styles.firstSection}>          
