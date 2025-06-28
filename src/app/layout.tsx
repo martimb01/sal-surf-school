@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "../globals.css";
 import styles from './layout.module.css'
 import NavBar from "./NavBar";
@@ -27,6 +28,7 @@ export default function RootLayout({
           <NavBar />
         </header>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

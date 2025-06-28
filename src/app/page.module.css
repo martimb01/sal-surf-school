@@ -25,7 +25,7 @@
     font-size: 28px;
     display: flex;
     flex-direction: column;
-    margin-top: -30px;
+    margin-top: 0;
 }
 
 .heroSubTitle {
@@ -34,7 +34,7 @@
 
 .heroButton {
     position: absolute;
-    top: 85%;
+    top: 65%;
     align-self: center;
     scale: 250%;    
 }
@@ -57,10 +57,11 @@
 
     .heroMainSection {
         font-size: 50px;
+        margin-top: -30px;
     }
 
     .heroButton {  
-        scale: 250%; 
+        top: 85%;
     }
 
     .heroSubTitle {

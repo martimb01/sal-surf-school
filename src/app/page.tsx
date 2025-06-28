@@ -32,7 +32,7 @@ export default function Home() {
           <PresentationCard 
             icon={<MdHealthAndSafety size={150}/>}
             title={'Safety first'}
-            info={'Our instructors are profesionaly trained, making sure its a safe and fun experience!'}
+            info={'Our instructors are profesionaly trained, making sure its a safe and fun environment for everyone!'}
           />
           <hr/>
           <PresentationCard 
