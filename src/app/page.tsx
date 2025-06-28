@@ -2,7 +2,8 @@ import styles from "./page.module.css";
 import Carousel from "../components/Carousel";
 import {VT323} from 'next/font/google'
 import Button from "@/components/ui/Button";
-import PresentationCard from "@/components/ui/PresentationCard";
+import PresentationCard from "@/components/PresentationCard";
+import TeamMemberCard from "@/components/ui/TeamMemberCard";
 
 //VT323 Font properties
 const vt323 = VT323({
@@ -13,9 +14,8 @@ const vt323 = VT323({
 
 export default function Home() {
   return (
-    <div className={`${styles.page} ${vt323.className}`}>
-      <main className={styles.main}>
-        <div className={styles.heroContainer}>
+      <main className={`${styles.main} ${vt323.className}`}>
+        <section className={styles.heroContainer}>
           <div className={styles.heroStack}>
             <div className={styles.heroMainSection}>
               <h1 className={styles.heroTitle}>Sal Surfing School</h1>
@@ -24,8 +24,8 @@ export default function Home() {
             <Carousel />
             <div className={styles.heroButton}><Button label={'Book lesson!'}/></div>
           </div>
-        </div>
-        <div className={styles.firstSection}>          
+        </section>
+        <section className={styles.firstSection}>          
           <PresentationCard
             title={'Safety'}
             emoji={'⛑️'}
@@ -49,8 +49,11 @@ export default function Home() {
               or youre a full blown professional, we got you covered on the fun factor!`
             } 
             />                  
-        </div>
+        </section>
+        <section className={styles.meetTheTeam}>
+          <h1>Meet the team</h1>
+          <TeamMemberCard />
+        </section>
       </main>
-    </div>
   );
 }

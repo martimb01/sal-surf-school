@@ -34,7 +34,7 @@
 
 .heroButton {
     position: absolute;
-    top: 65%;
+    top: 80%;
     align-self: center;
     scale: 250%;    
 }
@@ -43,6 +43,16 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+}
+
+.meetTheTeam {
+    background-color: red;
+    height: 400px;
+}
+
+.meetTheTeam h1 {
+    text-align: center;
+    font-size: 70px;
 }
 
 
@@ -66,7 +76,6 @@
 
     .heroSubTitle {
         font-size: 80%;
-
     }
 
 }

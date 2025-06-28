@@ -20,7 +20,7 @@
 }
 
 .emoji {
-    scale: 80%;
+    scale: 75%;
 }
 
 .bottomRow {
@@ -38,5 +38,4 @@
     .topRow {
         padding-bottom: 2vw;
     }
-
  }
