@@ -1,3 +1,4 @@
+import WaveBg from '@/components/ui/WaveBg';
 import styles from './page.module.css'
 import {VT323} from 'next/font/google'
 
@@ -12,14 +13,8 @@ export default function page() {
     <main className={`${styles.main} ${vt323.className}`}>
       <h1>About us</h1>
       <h2>Origin</h2>
-        <video
-          className={styles.video}
-          autoPlay
-          muted
-          loop
-          src="/barrel.mp4"
-        >
-        </video>
+      <p></p>
+        <WaveBg />
     </main>
   )
 }
