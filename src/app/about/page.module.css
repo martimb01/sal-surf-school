@@ -1,12 +1,43 @@
 .main {
     margin-top: 80px;
+    background-color: rgb(99, 99, 95);
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    position: relative;
+    font-size: 30px;
 }
 
+.main h1 {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.main h2 {
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
 
 /*Desktop*/
 
 @media (min-width: 768px) {
     .main {
         margin-top: 100px;
+        background-color: rgb(99, 99, 95);
+        height: calc(100vh - 100px);
     }
 }
