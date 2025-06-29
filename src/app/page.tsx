@@ -3,7 +3,8 @@ import Carousel from "../components/Carousel";
 import {VT323} from 'next/font/google'
 import Button from "@/components/ui/Button";
 import PresentationCard from "@/components/PresentationCard";
-import TeamMemberCard from "@/components/ui/TeamMemberCard";
+import TeamMemberCard from "@/components/TeamMemberCard";
+import Separator from "@/components/ui/Separator";
 
 //VT323 Font properties
 const vt323 = VT323({
@@ -50,10 +51,7 @@ export default function Home() {
             } 
             />                  
         </section>
-        <br />
-        <br />
-        <br />
-        <br />
+        <Separator />
         <section className={styles.meetTheTeam}>
           <h1>Meet the team</h1>
           <TeamMemberCard 
@@ -62,6 +60,9 @@ export default function Home() {
             description={`Born a surfer, the only thing that i love more than catching waves
                           is sharing them with the rest of the world!`} 
           />
+          <br />
+          <br />
+          <br />
           <TeamMemberCard 
             imageSrc={'/team/tataInvisivel.png'} 
             name={'Madalena Bento'} 
