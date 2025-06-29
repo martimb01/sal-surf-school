@@ -1,6 +1,7 @@
 import WaveBg from '@/components/ui/WaveBg';
 import styles from './page.module.css';
 import { VT323 } from 'next/font/google';
+import Image from 'next/image';
 
 // VT323 Font properties
 const vt323 = VT323({
@@ -90,7 +91,15 @@ export default function Page() {
           importance of preserving the sea, beaches, and surrounding areas in a more appealing and educational way — enhancing values and attitudes aimed at respect for Nature.
         </p>
       </main>
-      <WaveBg />
+    <video
+        className={styles.video}
+        autoPlay
+        playsInline
+        muted
+        loop
+        src="/ui/barrel.mp4"
+    >
+    </video>
     </>
   );
 }
