@@ -1,7 +1,5 @@
-import WaveBg from '@/components/ui/WaveBg';
 import styles from './page.module.css';
 import { VT323 } from 'next/font/google';
-import Image from 'next/image';
 
 // VT323 Font properties
 const vt323 = VT323({
