@@ -50,9 +50,24 @@ export default function Home() {
             } 
             />                  
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
         <section className={styles.meetTheTeam}>
           <h1>Meet the team</h1>
-          <TeamMemberCard />
+          <TeamMemberCard 
+            imageSrc={'/team/tutaInvisivel.png'} 
+            name={'Gabriel Olendzki'} 
+            description={`Born a surfer, the only thing that i love more than catching waves
+                          is sharing them with the rest of the world!`} 
+          />
+          <TeamMemberCard 
+            imageSrc={'/team/tataInvisivel.png'} 
+            name={'Madalena Bento'} 
+            description={`Born a surfer, the only thing that i love more than catching waves
+                          is sharing them with the rest of the world!`} 
+          />
         </section>
       </main>
   );

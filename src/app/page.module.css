@@ -18,25 +18,26 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    top: 10%;
+    top: 9%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 28px;
+    font-size: 7vw;
     display: flex;
     flex-direction: column;
     margin-top: 0;
 }
 
 .heroSubTitle {
-    font-size: 110%;
+    font-size: 130%;
 }
 
 .heroButton {
     position: absolute;
     top: 80%;
     align-self: center;
-    scale: 250%;    
+    scale: 210%;
+   
 }
 
 .firstSection {
@@ -46,7 +47,6 @@
 }
 
 .meetTheTeam {
-    background-color: red;
     height: 400px;
 }
 
@@ -72,6 +72,7 @@
 
     .heroButton {  
         top: 85%;
+        scale: 250%; 
     }
 
     .heroSubTitle {
