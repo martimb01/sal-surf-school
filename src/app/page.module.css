@@ -1,6 +1,6 @@
 .heroContainer {
     background-color: rgb(99, 99, 95);
-        height: 100vh;
+    height: 100vh;
 }
 
 .heroStack {
@@ -24,7 +24,7 @@
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    padding-top: 5vw;
 }
 
 .heroSubTitle {
@@ -67,7 +67,7 @@
 
     .heroMainSection {
         font-size: 50px;
-        margin-top: -30px;
+        padding-top: 0px;
     }
 
     .heroButton {  
