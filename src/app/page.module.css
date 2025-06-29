@@ -1,7 +1,6 @@
 .heroContainer {
     background-color: rgb(99, 99, 95);
-    height: calc(100vh - 80px);
-    margin-top: 80px;
+        height: 100vh;
 }
 
 .heroStack {
@@ -61,9 +60,9 @@
 @media (min-width: 768px) { 
 
     .heroContainer {
-    background-color: rgb(99, 99, 95);
-    height: calc(100vh - 100px);
-    margin-top: 100px;
+        height: 100vh;
+        padding-top: 100px;
+        margin-top: 0;
     }
 
     .heroMainSection {
