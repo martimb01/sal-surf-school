@@ -40,6 +40,8 @@ function NavList ({ isOpen = false }) {
             <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
                 <Link href=''>Lessons</Link>
                 <hr />
+                <Link href=''>Summer Camp</Link>
+                <hr />
                 <Link href=''>About us</Link>
                 <hr />
                 <Link href=''>Contacts</Link>

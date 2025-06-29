@@ -1,7 +1,7 @@
 .heroContainer {
     background-color: rgb(99, 99, 95);
-    height: calc(100vh - 90px);
-    margin-top: 90px;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
 }
 
 .heroStack {
@@ -22,7 +22,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 7vw;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     margin-top: 0;
