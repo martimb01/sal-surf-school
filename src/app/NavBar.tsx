@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './NavBar.module.css'
-import { useState, useEffect} from 'react';
+import { useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -9,8 +9,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar() {
     const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false)
-
-    useEffect(() => console.log(isMobileMenu),[isMobileMenu, NavList])
 
     return(
         <nav>

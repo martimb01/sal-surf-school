@@ -12,10 +12,10 @@ export default function WaveBg() {
         loop
         src="/ui/barrel.mp4"
     >
-      <Image
-        src='/ui/barrel.png'
-        fill
-        alt='Barrel' 
+      <img
+        className={styles.image}
+        src="/ui/barrel.png" 
+        alt="Barrel" 
       />
     </video>
   )
