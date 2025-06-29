@@ -1,0 +1,12 @@
+.main {
+    margin-top: 80px;
+}
+
+
+/*Desktop*/
+
+@media (min-width: 768px) {
+    .main {
+        margin-top: 100px;
+    }
+}

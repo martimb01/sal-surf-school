@@ -1,26 +1,29 @@
 'use client'
 
 import styles from './NavBar.module.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 import { RxHamburgerMenu } from "react-icons/rx";
 
+
 export default function NavBar() {
     const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false)
 
-    useEffect(() => {console.log(isMobileMenu)}, [isMobileMenu])
+    useEffect(() => console.log(isMobileMenu),[isMobileMenu, NavList])
 
     return(
         <nav>
             <div className={styles.navBar}>
-                <Image
-                    className={styles.logo} 
-                    src='/logo.png'
-                    width={90}
-                    height={90}
-                    alt='Sal Surf School'
-                />
+                <Link href='/' onClick={() => setIsMobileMenu(false)}>
+                    <Image
+                        className={styles.logo} 
+                        src='/logo.png'
+                        width={90}
+                        height={90}
+                        alt='Sal Surf School'
+                    />
+                </Link>
                 <div className={styles.hamburgerButton}>
                     <RxHamburgerMenu onClick={() => setIsMobileMenu(!isMobileMenu)} size={50} />
                 </div>
@@ -29,22 +32,22 @@ export default function NavBar() {
                 </div>
             </div>
             <div className={styles.mobileNavList}>
-                <NavList isOpen={isMobileMenu} />
+                <NavList isOpen={isMobileMenu} onLinkClick={() => setIsMobileMenu(false)} />
             </div>
         </nav>
     )
 }
 
-function NavList ({ isOpen = false }) {
+function NavList ({ isOpen = false, onLinkClick = () => {}}) {
     return (
-            <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
-                <Link href=''>Lessons</Link>
-                <hr />
-                <Link href=''>Summer Camp</Link>
-                <hr />
-                <Link href=''>About us</Link>
-                <hr />
-                <Link href=''>Contacts</Link>
-            </ul>
+        <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
+                <Link href="/lessons" >Lessons</Link>
+            <hr />
+                <Link href="/summer-camp">Summer Camp</Link>
+            <hr />
+                <Link href="/about" onClick={onLinkClick}>About us</Link>
+            <hr />
+                <Link href="/contacts">Contacts</Link>
+        </ul>
     )
 }
