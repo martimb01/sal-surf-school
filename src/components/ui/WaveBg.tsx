@@ -12,11 +12,6 @@ export default function WaveBg() {
         loop
         src="/ui/barrel.mp4"
     >
-      <Image
-        src='/ui/barrel.png'
-        fill
-        alt='Barrel' 
-      />
     </video>
   )
 }
