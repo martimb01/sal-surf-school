@@ -26,6 +26,7 @@
     z-index: 1;
     text-indent: 5vw;
     padding-left: 5vw;
+    padding-top: 4vw;
     padding-right: 5vw;
     padding-bottom: 2vw;
 }
@@ -36,5 +37,9 @@
     .main {
         background-color: rgb(99, 99, 95);
         height: 100vh
+    }
+
+    .main p {
+        padding-top: 2vw; ;
     }
 }

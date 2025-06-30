@@ -39,7 +39,7 @@ export default function NavBar() {
 function NavList ({ isOpen = false, onLinkClick = () => {}}) {
     return (
         <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
-                <Link href="/lessons" >Lessons</Link>
+                <Link href="/lessons" onClick={onLinkClick} >Lessons</Link>
             <hr />
                 <Link href="/summer-camp">Summer Camp</Link>
             <hr />
