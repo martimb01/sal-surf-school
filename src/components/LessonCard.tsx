@@ -1,11 +1,11 @@
 import styles from './LessonCard.module.css'
 
 type Props = {
-    title: String,
-    subTitle: String,
-    price1: String,
-    price2: String,
-    price3: String
+    title: string,
+    subTitle: string,
+    price1: string,
+    price2: string,
+    price3: string
 }
 
 export default function LessonCard({title, subTitle, price1, price2, price3} : Props) {
