@@ -16,3 +16,14 @@
     margin-bottom: 5vw;
 }
 
+@media(min-width: 768px) {
+    .mainContainer{
+        font-size: 3vw;
+
+    }
+
+    .mainContainer h2 {
+
+    }
+}
+

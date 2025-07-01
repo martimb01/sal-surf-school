@@ -20,7 +20,7 @@ export default function LessonCard({title, subTitle, price1, price2, price3} : P
         <div className={styles.price}>
             {price1}
             <br />
-            {price2}
+            {price2 === '' ? '' : price2}
             <br />
             {price3}
         </div>
