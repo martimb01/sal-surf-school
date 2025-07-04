@@ -41,8 +41,6 @@ function NavList ({ isOpen = false, onLinkClick = () => {}}) {
         <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
                 <Link href="/lessons" onClick={onLinkClick} >Lessons</Link>
             <hr />
-                <Link href="/summer-camp">Summer Camp</Link>
-            <hr />
                 <Link href="/about" onClick={onLinkClick}>About us</Link>
             <hr />
                 <Link href="/contacts">Contacts</Link>

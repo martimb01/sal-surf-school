@@ -1,6 +1,7 @@
 'use client'
 import {VT323} from 'next/font/google'
 import styles from './Button.module.css'
+import {useRouter} from 'next/navigation'
 
 //VT323 Font properties
 const vt323 = VT323({
@@ -10,7 +11,8 @@ const vt323 = VT323({
 
 
 export default function Button({label} : {label:string}) {
-    const handleClick = () => console.log('Clicked!')
+    const router = useRouter()
+    const handleClick = () => router.push('/contacts')
     return (
         <button 
             onClick={handleClick}
