@@ -43,7 +43,7 @@ function NavList ({ isOpen = false, onLinkClick = () => {}}) {
             <hr />
                 <Link href="/about" onClick={onLinkClick}>About us</Link>
             <hr />
-                <Link href="/contacts">Contacts</Link>
+                <Link href="/contacts" onClick={onLinkClick}>Contacts</Link>
         </ul>
     )
 }

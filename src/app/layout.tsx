@@ -4,6 +4,7 @@ import "../globals.css";
 import styles from './layout.module.css'
 import NavBar from "./NavBar";
 import {VT323} from 'next/font/google'
+import WpBubble from "@/components/ui/WpBubble";
 
 //VT323 Font properties
 const vt323 = VT323({
@@ -29,6 +30,7 @@ export default function RootLayout({
         </header>
         {children}
         <SpeedInsights />
+        <WpBubble />
       </body>
     </html>
   );

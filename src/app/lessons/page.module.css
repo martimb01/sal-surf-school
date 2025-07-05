@@ -58,7 +58,8 @@
     }
 
     .imageContainer{
-        height: 30vh;
+        height: 20vw;
+        max-height: 300px ;
     }
     
     .imageContainer h1 {
